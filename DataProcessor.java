@@ -1,8 +1,6 @@
 import java.util.*;
 
-// The Blob: An object with too many responsibilities
-// Spaghetti Code: Hard-to-follow logic and lack of structure
-// Golden Hammer: Overuse of a single tool (method) that may not be suited for the problem
+// Performs five calculations on a list of numbers.
 public class DataProcessor {
 	private List<Integer> numbers;
 
@@ -10,6 +8,7 @@ public class DataProcessor {
 		this.numbers = numbers;
 	}
 
+	// Calls the five calculations and prints results.
 	public void processNumbers() {
 		System.out.println("Processing numbers...");
 		int sum = calculateSum(numbers);
