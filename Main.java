@@ -6,18 +6,19 @@ public class Main {
         DataProcessor dataProcessor = new DataProcessor(numbers);
         dataProcessor.processNumbers();
 
+        CircleProcessor circleProcessor = new CircleProcessor();
         double radius = 5.0;
-        double area = DataProcessor.calculateArea(radius);
+        double area = circleProcessor.calculateArea(radius);
         System.out.println("Area of the circle with radius " + radius + ": " + area);
         
-        double circumference = DataProcessor.calculateCircumference(radius);
+        double circumference = circleProcessor.calculateCircumference(radius);
         System.out.println("Circumference of the circle with radius " + radius + ": " + circumference);
         
         double height = 10.0;
-        double volume = DataProcessor.calculateVolume(radius, height);
+        double volume = circleProcessor.calculateVolume(radius, height);
         System.out.println("Volume of the cylinder with radius " + radius + " and height " + height + ": " + volume);
         
-        double surfaceArea = DataProcessor.calculateSurfaceArea(radius, height);
+        double surfaceArea = circleProcessor.calculateSurfaceArea(radius, height);
         System.out.println("Surface area of the cylinder with radius " + radius + " and height " + height + ": " + surfaceArea);
     }
 	
